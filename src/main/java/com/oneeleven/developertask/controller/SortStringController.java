@@ -1,10 +1,12 @@
 package com.oneeleven.developertask.controller;
 
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import java.util.*;
 
 @RestController
 @RequestMapping("/api")
+@CrossOrigin(origins = "*")
 public class SortStringController {
 
     @PostMapping("/sort-string")
