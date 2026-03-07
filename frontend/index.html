@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Task: Sort String ApI Tester</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 500px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        pre {
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sort String API Tester</h2>
+        <input type="text" id="inputString" placeholder="Enter a string to sort">
+        <input type="text" id="email" placeholder="Enter your email">
+        <button onclick="callApi()">Sort String</button>
+        <pre id="result"></pre>
+    </div>
+
+    <script>
+        async function callApi() {
+            const input = document.getElementById('inputString').value;
+            const email = document.getElementById('email').value;
+            const apiUrl = "https://springboot-sort-string-api-1.onrender.com/api/sort-string";
+
+            if (!input) {
+                document.getElementById('result').textContent = "Please enter a string.";
+                return;
+            }
+            if (!email) {
+                document.getElementById('result').textContent = "Please enter your email.";
+                return;
+            }
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ data: input })
+                });
+
+                const data = await response.json();
+                document.getElementById('result').textContent = JSON.stringify(data, null, 2);
+            } catch (error) {
+                document.getElementById('result').textContent = "Error: " + error;
+            }
+        }
+    </script>
+</body>
+</html>
