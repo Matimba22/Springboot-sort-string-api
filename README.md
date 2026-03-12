@@ -1,4 +1,4 @@
-so this README explains everything the employer needs : # Spring Boot Sort String API - Developer Task
+# Spring Boot Sort String API - Developer Task
 
 This repository contains a full-stack developer task project that implements a **string sorting API** using **Spring Boot** for the backend and a simple **HTML + JavaScript frontend** interface.
 
