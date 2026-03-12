@@ -1,30 +1,26 @@
-\# Developer Task Submission
+so this README explains everything the employer needs : # Spring Boot Sort String API - Developer Task
 
+This repository contains a full-stack developer task project that implements a **string sorting API** using **Spring Boot** for the backend and a simple **HTML + JavaScript frontend** interface.
 
+## Project Overview
 
-This repository contains the backend implementation of the developer task using Spring Boot.
+- **Backend**: Spring Boot application exposing REST APIs for sorting strings.
+- **Frontend**: HTML + JavaScript interface to interact with the API.
+- **Purpose**: Demonstrates REST API development, frontend-backend integration, and project structuring.
 
+## Technologies Used
 
+- **Java 17**  
+- **Spring Boot**  
+- **Maven**  
+- **HTML + JavaScript** (frontend)  
 
-\## Backend
+## Running the Application
 
-The backend exposes the REST APIs required for the task and can be run locally using:
+### Backend
 
+1. Navigate to the project root.  
+2. Run the backend with:
 
-
+```bash
 mvn spring-boot:run
-
-
-
-\## Frontend
-
-The frontend interface has been completed. However, I am currently working on finalizing the integration between the frontend and backend services. 
-
-
-
-Due to time constraints and the requirement to submit the backend implementation, I am submitting the backend first. Once the integration is finalized, I will update the repository with the complete full-stack implementation.
-
-
-
-Thank you for the opportunity.
-
