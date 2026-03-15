@@ -10,7 +10,7 @@ This repository contains a full-stack developer task project that implements a *
 
 ### Frontend (Netlify)
 You can access the deployed frontend here:
-springboot-string-sort-api.netlify.app
+https://springboot-string-sort-api.netlify.app
 
 ### Backend API
 POST endpoint:
