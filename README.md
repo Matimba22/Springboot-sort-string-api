@@ -13,6 +13,7 @@ You can access the deployed frontend here:
 https://beautiful-meringue-93fd90.netlify.app
 
 ### Backend API
+POST endpoint:
 You can test the backend API directly in the browser using the following endpoint:
 https://springboot-sort-string-api-1.onrender.com/api/sort-string
 
