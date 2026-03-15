@@ -8,6 +8,14 @@ This repository contains a full-stack developer task project that implements a *
 - **Frontend**: HTML + JavaScript interface to interact with the API.
 - **Purpose**: Demonstrates REST API development, frontend-backend integration, and project structuring.
 
+### Frontend (Netlify)
+You can access the deployed frontend here:
+https://beautiful-meringue-93fd90.netlify.app
+
+### Backend API
+You can test the backend API directly in the browser using the following endpoint:
+https://springboot-sort-string-api-1.onrender.com/api/sort-string
+
 ## Technologies Used
 
 - **Java 17**  
